@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    
+</script>
+</head>
+<body :controller="test">
+    <ms-a></ms-a>
+    <ms-b></ms-b>
+    <br>
+    <!-- <ms-view>
+      你好他
+      <div slot="content"></div>
+      <!-- <div slot="content">这是子视图的内容</div> ->
+    </ms-view> -->
+    <input :duplex="@name">
+    <input :duplex="@fullName">
+    <p>Hello,{{@name}}!</p>
+    <p>{{@fullName}}</p>- <p>{{@xxx}}</p>
+    <ul>
+       <li :for="($index,el) in @array">{{$index}}--{{el}}</li>
+    </ul>
+    <button type="button" :on-click="submitData">提交</button>
+</body>
+</html>
