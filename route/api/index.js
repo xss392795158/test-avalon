@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-/* router.get('/testAjax', (req, res) => {
+router.get('/testAjax', (req, res) => {
   console.log('get!!@@@@@@@@@@@@@@@@@@@@')
   res.json(
     {
@@ -13,7 +13,8 @@ const router = express.Router();
       message: 'success'
     }
   )
-}) */
+});
+
 router.post('/testAjax', (req, res) => {
   let params = req.body||{};
   let queryParams = req.query;
