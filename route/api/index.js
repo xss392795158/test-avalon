@@ -14,7 +14,7 @@ const router = express.Router();
     }
   )
 }) */
-/* router.post('/testAjax', (req, res) => {
+router.post('/testAjax', (req, res) => {
   let params = req.body||{};
   let queryParams = req.query;
 
@@ -36,6 +36,6 @@ const router = express.Router();
       message: 'success'
     }
   )
-}) */
+})
 
 module.exports = router;
